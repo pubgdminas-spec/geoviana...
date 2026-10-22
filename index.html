@@ -1,0 +1,40 @@
+<!doctype html><html lang="pt-BR"><head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="theme-color" content="#100906">
+<title>Geovane Viana | Agendamento</title><meta name="description" content="Geovane Viana — cortes, coloração, progressiva e sobrancelhas. Agende seu horário.">
+<link rel="stylesheet" href="style.css"></head><body>
+<main class="stage" aria-label="Geovane Viana">
+<img class="mockup" src="assets/layout-gv.png" alt="Geovane Viana, marca GV dourada, salão colorido, modelo masculino, serviços e agendamento">
+<a class="hotspot nav-home" href="#inicio" aria-label="Início"></a>
+<a class="hotspot nav-services" href="#servicos" aria-label="Serviços"></a>
+<a class="hotspot nav-about" href="beleza.html" aria-label="Sobre nós"></a>
+<a class="hotspot nav-gallery" href="beleza.html#galeria" aria-label="Galeria"></a>
+<a class="hotspot nav-contact" href="#contato" aria-label="Contato"></a>
+<button class="hotspot top-book" data-open-booking aria-label="Agendar horário"></button>
+<!-- Área interativa da marca: clique na logo/título para ver o efeito animado. -->
+<button class="hotspot brand-hit" data-brand-hit aria-label="Efeito da logo GV de Geovane Viana"></button>
+<button class="hotspot main-book" data-open-booking aria-label="Agende seu horário"></button>
+<button class="hotspot service-cut" data-service="Corte de cabelo" aria-label="Escolher corte de cabelo"></button>
+<button class="hotspot service-progressiva" data-service="Progressiva" aria-label="Escolher progressiva"></button>
+<button class="hotspot service-brow" data-service="Sobrancelha" aria-label="Escolher sobrancelha"></button>
+<button class="hotspot service-color" data-service="Coloração" aria-label="Escolher cor de cabelo"></button>
+<!-- Horários desenhados na arte funcionam como botões reais. -->
+<button class="hotspot slot-hit slot-0800" data-slot="08:00" aria-label="Selecionar 08:00, horário disponível"></button>
+<button class="hotspot slot-hit slot-1000" data-slot="10:00" aria-label="Selecionar 10:00, horário disponível"></button>
+<button class="hotspot slot-hit slot-1400" data-slot="14:00" aria-label="Selecionar 14:00, horário disponível"></button>
+<button class="hotspot slot-hit slot-1600" data-slot="16:00" aria-label="Selecionar 16:00, horário disponível"></button>
+<button class="hotspot slot-hit slot-0900" data-slot="09:00" data-unavailable="true" aria-label="09:00 indisponível"></button>
+<button class="hotspot slot-hit slot-1100" data-slot="11:00" data-unavailable="true" aria-label="11:00 indisponível"></button>
+<button class="hotspot slot-hit slot-1300" data-slot="13:00" data-unavailable="true" aria-label="13:00 indisponível"></button>
+<button class="hotspot slot-hit slot-1500" data-slot="15:00" data-unavailable="true" aria-label="15:00 indisponível"></button>
+<a class="hotspot insta" href="https://instagram.com/" target="_blank" rel="noopener" aria-label="Instagram"></a>
+<a class="hotspot tiktok" href="https://tiktok.com/" target="_blank" rel="noopener" aria-label="TikTok"></a>
+<a class="hotspot facebook" href="https://facebook.com/" target="_blank" rel="noopener" aria-label="Facebook"></a>
+<a class="hotspot whatsapp" href="https://wa.me/5511987654321" target="_blank" rel="noopener" aria-label="Contato por WhatsApp"></a>
+</main>
+<div class="below" id="inicio"><a href="beleza.html">Conheça o Universo da Beleza de Geovane Viana ↗</a><span>Toque em serviços, horários, título ou logo para ativar os efeitos.</span><button class="admin-open" type="button" data-open-admin>⚙ Painel de horários</button></div>
+<div class="modal" id="bookingModal" aria-hidden="true"><div class="modal-backdrop" data-close></div><section class="modal-card" role="dialog" aria-modal="true" aria-labelledby="modalTitle"><button class="close" data-close aria-label="Fechar">×</button><p class="eyebrow">GEOVANE VIANA</p><h1 id="modalTitle">Agende seu <em>horário.</em></h1><p class="sub">Escolha o serviço e envie seu pedido de agendamento.</p>
+<form id="bookingForm"><label>Nome completo<input name="nome" required placeholder="Como podemos chamar você?"></label><label>WhatsApp<input name="whatsapp" required type="tel" placeholder="(11) 99999-9999"></label><label>Serviço<select name="servico" id="service" required><option value="">Escolha um serviço</option><option>Corte feminino</option><option>Corte masculino</option><option>Progressiva</option><option>Sobrancelha</option><option>Coloração</option></select></label><label>Cor desejada (se aplicável)<select name="cor"><option>Não se aplica</option><option>Preto intenso</option><option>Castanho chocolate</option><option>Loiro dourado</option><option>Loiro platinado</option><option>Ruivo acobreado</option><option>Vermelho cereja</option><option>Colorido fantasia</option><option>Quero orientação</option></select></label><div class="twocol"><label>Data<input name="data" type="date" id="date" required></label><label>Horário<select name="horario" id="timeSelect" required><option value="">Escolha a data primeiro</option></select></label></div>
+<div class="availability-panel" aria-live="polite"><div class="availability-heading"><strong>Horários da data escolhida</strong><span id="availabilityDateLabel">Selecione uma data</span></div><div class="availability-state"><i class="state-dot available-dot"></i><span>Disponíveis</span></div><div id="availableTimes" class="time-chips"></div><div class="availability-state unavailable-label"><i class="state-dot unavailable-dot"></i><span>Indisponíveis</span></div><div id="unavailableTimes" class="time-chips muted-chips"></div></div>
+<label>Observações<textarea name="observacoes" rows="2" placeholder="Conte o que você deseja..."></textarea></label><button class="submit" type="submit">Enviar pedido de agendamento ↗</button><p class="disclaimer">Protótipo local: o pedido fica salvo neste navegador. A confirmação final depende do salão.</p><div id="message" role="status"></div>
+<div class="admin-entry"><button type="button" id="adminToggle">⚙ Abrir painel do administrador</button><div id="adminPanel" hidden><label>Senha de demonstração<input type="password" id="adminPassword" placeholder="Senha do administrador"></label><button type="button" class="submit admin-login" id="adminLogin">Entrar no painel</button><div id="adminContent"></div><small>Senha inicial de demonstração: <b>GV2026</b>. Os dados ficam só neste navegador.</small></div></div></form></section></div>
+<script src="script.js"></script></body></html>

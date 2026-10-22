@@ -1,0 +1,23 @@
+GEOVANE VIANA — SITE INTERATIVO E AGENDA
+
+COMO ABRIR
+1. Extraia todo o ZIP para uma pasta. Mantenha juntos index.html, beleza.html, style.css, script.js e a pasta assets.
+2. Abra index.html no Chrome, Edge ou Firefox.
+
+IDENTIDADE VISUAL
+- Nome do site: Geovane Viana.
+- Logo: GV dourada.
+- A arte principal foi atualizada para exibir Geovane Viana e GV.
+- Os links, botões, serviços e efeitos de bolhas continuam interativos.
+
+AGENDA
+- Escolha o serviço, a data e um horário disponível.
+- O pedido fica pendente até ser aceito pelo painel do administrador.
+- No painel é possível alterar a disponibilidade por data, aceitar/recusar pedidos e exportar CSV.
+- Senha inicial local de demonstração: GV2026.
+
+IMPORTANTE
+Esta versão é um protótipo local, não um serviço online. Os dados ficam no localStorage deste navegador/dispositivo e podem ser apagados. A senha de demonstração não é autenticação segura. Para receber reservas reais em vários celulares/computadores, publique o site e conecte autenticação e banco de dados no servidor.
+
+REDES SOCIAIS E CONTATO
+Edite os links de Instagram, TikTok, Facebook e WhatsApp em index.html para informar seus endereços e números reais. Os links e contatos mostrados na imagem principal são elementos gráficos; personalize os destinos dos botões no HTML.
